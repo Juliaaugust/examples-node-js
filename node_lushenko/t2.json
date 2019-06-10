@@ -1,0 +1,25 @@
+{
+    "name": "Julia",
+    "age": 22,
+    "programming languages": ["C++", "JavaScript", "Java", "Python"],
+    "family": {
+        "sister": {
+            "name": "Alla",
+            "age": 22
+        },
+        "mother": {
+            "name": "Tatiana",
+            "age": 42
+        },
+        "father": {
+            "name": "Alexey",
+            "age": 46
+        }
+    },
+    "hobbies": ["drawing", "writing poems", {"sport": ["aerial silks", "stratchind"]}],
+
+    "pet": {
+        "name": "Klukva",
+        "age": 3
+    }
+}
