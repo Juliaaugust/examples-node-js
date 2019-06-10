@@ -8,7 +8,7 @@ let fs = require('fs');
 //     }
 // })
 
-// fs.rmdir("test1", e => {
+// fs.rmdir("test2", e => {
 //     if (e) console.log(e);
 //     else console.log("Successfully deleted!");
 // })

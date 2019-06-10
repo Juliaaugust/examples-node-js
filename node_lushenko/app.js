@@ -1,15 +1,15 @@
 let fs = require("fs");
 
-// fs.readFile("t2.json", (err, data) => {
-//     if (err) throw err;
-//     let obj = data.toString()
-//     obj = JSON.parse(obj, (k, v) => {
-//         console.log(k)
-//         return v;
-//     });
-//     console.log(obj);
-//     console.log(typeof(obj));
-// })
+fs.readFile("t2.json", (err, data) => {
+    if (err) throw err;
+    let obj = data.toString()
+    obj = JSON.parse(obj, (k, v) => {
+        // console.log(k)
+        return v;
+    });
+    console.log(obj.family.sister);
+    console.log(typeof(obj));
+})
 
 let arr;
 
@@ -18,7 +18,6 @@ fs.readFile("poem.txt", (err, data) => {
     text = data.toString();
     arr = text.split("\n");
     console.log(arr.length);
-    // arr = arr.split("\n");
     // for (let i = 0; i < arr.length; i++) {
     //     console.log(arr[i].trim());
     // }
@@ -30,4 +29,4 @@ arr = fs.readFileSync("poem.txt", (err, data) => {
 });
 arr = arr.toString();
 
-console.log("2: " + arr);
+console.log("2:\n" + arr);
